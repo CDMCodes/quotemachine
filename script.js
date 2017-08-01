@@ -7,7 +7,12 @@ $(document).ready(function(){
       var quoteauthor = returned['quoteAuthor'];
       //console.log(quotetext + "  " + quoteauthor);
       //console.log(typeof quotetext);
+      var tweettext = quotetext.split("")
+      var tweetlong = tweettext.splice(120);
+      tweettext[-1] = "...";
+      tweettext = tweettext.join("");
       $("#quotebox").html("<p>"+quotetext+"</p> <p>" + quoteauthor + "</p>");
+      $("#tweetButton").parent().attr("href","https://twitter.com/intent/tweet?text=" + tweettext)
     });
   });
 
