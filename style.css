@@ -1,4 +1,47 @@
-* {
+/** {
   border: 1px solid black;
   text-align: center
+}*/
+
+body {
+  background-color: #dbcfa6;
+  text-align: center;
+  font-family: "Georgia", Times, serif;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  background-color: #dbcfa6;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+button:hover {
+  text-decoration: underline;
+  background-color: #a8a6a1;
+}
+
+#quotebox p:nth-child(2){
+  text-align: right;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#contentbox {
+  background-color: white;
+  padding: 10px;
+  border-radius:2px;
+  margin: auto;
+  font-size: 24px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: -webkit-translate(-50%, -50%);
+  transform: -moz-translate(-50%, -50%);
+  transform: -ms-translate(-50%, -50%);
 }
