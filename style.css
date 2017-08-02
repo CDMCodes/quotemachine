@@ -20,7 +20,7 @@ button {
 }
 
 button:hover {
-  text-decoration: underline;
+  font-weight: bold;
   background-color: #a8a6a1;
 }
 
