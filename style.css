@@ -15,15 +15,18 @@ button {
   border-radius: 2px;
   background-color: #dbcfa6;
   color: black;
-  font-size: 1em;
+  font-size: .75em;
   font-weight: bold;
-  letter-spacing: 0.1em;
+  //letter-spacing: 0.1em;
+  display: inline-block;
+  margin: 2px;
 }
 
 button:hover {
   font-weight: bold;
   background-color: #a8a6a1;
 }
+
 #contentbox {
   background-color: white;
   padding: 10px;
@@ -40,13 +43,18 @@ button:hover {
 }
 
 #quotebox {
-  font-size: 2em;
+  font-size: 1.25em;
 }
-
 
 #quotebox p:nth-child(2){
   text-align: right;
   font-style: italic;
   font-weight: bold;
   font-size: 1em;
+}
+
+@media (min-width: 550px){
+  #quotebox{
+    font-size: 2em;
+  }
 }
